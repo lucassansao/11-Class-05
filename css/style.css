@@ -131,6 +131,8 @@ a {
         background-color: var(--darkerBlack);
         color: white;
         align-items: center;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
 
     nav h2 {
@@ -154,6 +156,7 @@ a {
 
     details li {
         display: flex;
+        padding: 3%;
     }
 
     details a {
@@ -166,5 +169,67 @@ a {
         font-size: 24px;
     }
 
+    .about {
+        padding: 5%;
+        row-gap: 3vh;
+    }
+
+    .about > article {
+        display: flex;
+        align-items: center;
+        column-gap: 1vh;
+    }
+
+    .about aside {
+        display: flex;
+        border: 2px solid var(--defaultGray);
+        width: 30%;
+        height: 1vh;
+        background-color: var(--defaultGray);
+    }
+
+    .about section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .about section article {
+        row-gap: 3vh;
+    }
+
+    .about a {
+        width: 30%;
+        background-color: var(--defaultColor);
+        text-align: center;
+        color: whitesmoke;
+        padding: 1%;
+    }
+    
+    .about p {
+        line-height: 1.5;
+        color: var(--lightBlack2);
+        font-size: 12px;
+    }
+
+    .about blockquote {
+        border-left: 10px solid var(--defaultColor);
+        padding: 3%;
+        row-gap: 3vh;
+    }
+
+    .about q {
+        padding-left: 5%;
+        line-height: 1.5;
+        font-style: italic;
+        font: 12px;
+        color: var(--lightBlack2);
+    }
+
+    .about cite {
+        color: var(--defaultColor);
+        text-transform: uppercase;
+        padding-left: 5%;
+    }
 
 }
