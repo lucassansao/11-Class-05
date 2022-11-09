@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Libre Franklin', sans-serif;
@@ -231,5 +231,68 @@ a {
         text-transform: uppercase;
         padding-left: 5%;
     }
+
+    footer {
+        background-color: var(--lightBlack);
+        row-gap: 5vh;
+    }
+
+    footer a {
+        font-size: 18px;
+        color: var(--defaultGray);
+        border-radius: 50%;
+        border: 2px solid var(--defaultGray);
+        text-align: center;
+        height: 4vh;
+        width: 4vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer > article,
+    footer aside,
+    footer section,
+    footer > article > article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+    }
+
+    footer section {
+
+    }
+
+    footer section > aside {
+        flex-direction: row;
+        column-gap: 2vh;
+    }
+
+    footer h3 {
+        text-transform: uppercase;
+        color: var(--defaultGray);
+    }
+
+    aside > form {
+        padding: 2%;
+    }
+
+    input {
+        padding: 2%;
+        border: none;
+        background-color: var(--lightBlack2);
+    }
+
+    input,
+    input::placeholder {
+        color: var(--defaultGray);
+    }
+
+
+    [type="email"] {
+        background-color: var(--defaultGray);
+        text-transform: uppercase;
+        padding-left: 2%;
+  }
 
 }
