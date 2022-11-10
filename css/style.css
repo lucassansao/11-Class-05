@@ -321,3 +321,9 @@ a {
    /* FOOTER, END */
 }
 /* MOBILE, END */
+
+/* TABLET, START */
+@media (min-width: 600px) {
+
+}
+/* TABLET, END */
