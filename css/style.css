@@ -1,21 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Franklin', sans-serif;
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Libre Franklin', sans-serif;
 }
 
 :root {
-    --defaultColor: #55A2A6;
-    --defaultBlack: #151515;
-    --lightBlack: #333333;
-    --darkerBlack: #111111;
-    --lightBlack2: #444444;
-    --defaultGray: #CCC;
-    --darkerGray: #B2B2B2;
+   --defaultColor: #55A2A6;
+   --defaultBlack: #151515;
+   --lightBlack: #333333;
+   --darkerBlack: #111111;
+   --lightBlack2: #444444;
+   --defaultGray: #CCC;
+   --darkerGray: #B2B2B2;
 }
 
 html {
-    scroll-behavior: smooth;
+   scroll-behavior: smooth;
 }
 
 body,
@@ -27,276 +27,303 @@ main > section,
 .about > blockquote,
 .features a,
 footer {
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
 }
 
 h1 {
-    color: var(--darkerBlack)
+   color: var(--darkerBlack)
 }
 
 h1,
 h3 {
-    text-transform: capitalize;
+   text-transform: capitalize;
 }
 
 h2 {
-    text-transform: uppercase;
-    color: white;
+   text-transform: uppercase;
+   color: white;
 }
 
 h3 {
-    color: var(--darkerGray);
+   color: var(--darkerGray);
 }
 
 a {
-    text-decoration: none;
+   text-decoration: none;
 }
 
+/* MOBILE, START */
 @media (min-width: 250px) {
+  /* MAIN START */
+   main { 
+       row-gap: 5vh;
+   }
+  /* MAIN, END */
+  
+  /* HEADER, START */
+   header {
+       background-image: url(/img/bg-header.jpg);
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       height: 40vh;
+   }
 
-    main{ 
-        row-gap: 5vh;
-    }
+   header article {
+      background-color: rgba(50, 50,50,.4);
+      height: 100%;
+      width: 100%;
+     }
+     /* HEADER, END */
 
-    header {
-        background-image: url(/img/bg-header.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 40vh;
-    }
+  /* NAVIGATION, START    */
+  nav > ul {
+     display: none;
+  }
+  
+  nav aside { 
+     display: flex;
+     justify-content: space-between;
+     background-color: var(--darkerBlack);
+     color: white;
+     align-items: center;
+     padding-top: 2vh;
+     padding-bottom: 2vh;
+  }
+  
+  nav h2 {
+      padding-left: 5vh;
+  }
+  
+  details {
+      position: absolute;
+      width: 95%;
+      text-align: right;
+      padding-right: 5%;
+  }
+  
+  details ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: var(--darkerBlack)
+  }
+  
+  details li {
+      display: flex;
+      padding: 3%;
+  }
+  
+  details a {
+      color: white;
+      padding: 3%;
+      width: 100%;
+  }
+  
+  summary {
+      font-size: 24px;
+  }
+  /* NAVIGATION, END */
 
-    header article {
-        background-color: rgba(50, 50,50,.4);
-        height: 100%;
-        width: 100%;
-
-    }
-
-    .features {
-        row-gap: 5vh;
-    }
-
-    .features blockquote {
-        line-height: 1.5;
-        color: white;
-        background-color: var(--defaultColor);
-        padding: 4%;
-        padding-left: 20%;
-        padding-right: 20%;
-        text-align: center;
-    }
-
-    .features q,
-    .features cite {
-        width: 80%;
-    }
-
-    .features > article {
-        display: flex;
-        flex-direction: column;
-        row-gap: 10vh;
-        padding-bottom: 5vh;
-        padding-top: 5vh;
-    }
-
-    .features a {
-        align-items: center;
-        row-gap: 2vh;
-        color: var(--darkerBlack);
-    }
-
-    .features h3 {
-        width: 40%;
-        text-align: center;
-    }
-
-    .features i {
-        font-size: 48px;
-    }
-
-    .features p {
-        color: var(--darkerGray);
-        font-weight: 500;    
-    }
-
-    nav > ul {
-        display: none;
-    }
-
-    nav aside { 
-        display: flex;
-        justify-content: space-between;
-        background-color: var(--darkerBlack);
-        color: white;
-        align-items: center;
-        padding-top: 2vh;
-        padding-bottom: 2vh;
-    }
-
-    nav h2 {
-        padding-left: 5vh;
-    }
-
-    details {
-        position: absolute;
-        width: 95%;
-        text-align: right;
-        padding-right: 5%;
-    }
-
-    details ul {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        background-color: var(--darkerBlack)
-    }
-
-    details li {
-        display: flex;
-        padding: 3%;
-    }
-
-    details a {
-        color: white;
-        padding: 3%;
-        width: 100%;
-    }
-
-    summary {
-        font-size: 24px;
-    }
-
-    .about {
-        padding: 5%;
-        row-gap: 3vh;
-    }
-
-    .about > article {
-        display: flex;
-        align-items: center;
-        column-gap: 1vh;
-    }
-
-    .about aside {
-        display: flex;
-        border: 2px solid var(--defaultGray);
-        width: 30%;
-        height: 1vh;
-        background-color: var(--defaultGray);
-    }
-
-    .about section {
-        display: flex;
-        flex-direction: column;
-        row-gap: 3vh;
-    }
-
-    .about section article {
-        row-gap: 3vh;
-    }
-
-    .about a {
-        width: 30%;
-        background-color: var(--defaultColor);
-        text-align: center;
-        color: whitesmoke;
-        padding: 1%;
-    }
-    
-    .about p {
-        line-height: 1.5;
-        color: var(--lightBlack2);
-        font-size: 12px;
-    }
-
-    .about blockquote {
-        border-left: 10px solid var(--defaultColor);
-        padding: 3%;
-        row-gap: 3vh;
-    }
-
-    .about q {
-        padding-left: 5%;
-        line-height: 1.5;
-        font-style: italic;
-        font: 12px;
-        color: var(--lightBlack2);
-    }
-
-    .about cite {
-        color: var(--defaultColor);
-        text-transform: uppercase;
-        padding-left: 5%;
-    }
-
-    footer {
-        background-color: var(--lightBlack);
-        row-gap: 5vh;
-    }
-
-    footer a {
-        font-size: 18px;
-        color: var(--defaultGray);
-        border-radius: 50%;
-        border: 2px solid var(--defaultGray);
-        text-align: center;
-        height: 4vh;
-        width: 4vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer > article,
-    footer aside,
-    footer section,
-    footer > article > article {
-        display: flex;
-        flex-direction: column;
-        row-gap: 4vh;
-    }
-
-    footer section {
-
-    }
-
-    footer section > aside {
-        flex-direction: row;
-        column-gap: 2vh;
-    }
-
-    footer h3 {
-        text-transform: uppercase;
-        color: var(--defaultGray);
-    }
-
-    aside > form {
-        padding: 2%;
-    }
-
-    input {
-        padding: 2%;
-        border: none;
-        background-color: var(--lightBlack2);
-    }
-
-    input,
-    input::placeholder {
-        color: var(--defaultGray);
-    }
-
-
-    [type="email"] {
-        background-color: var(--defaultGray);
-        text-transform: uppercase;
-        padding-left: 2%;
+  /* MAIN, START */
+  /* SECTION.FEATURES, START */
+  .features {
+     row-gap: 5vh;
   }
 
-}
+  .features blockquote {
+     line-height: 1.5;
+     color: white;
+     background-color: var(--defaultColor);
+     padding: 4%;
+     padding-left: 20%;
+     padding-right: 20%;
+     text-align: center;
+  }
 
-@media (min-width: 700px) {
-    
+  .features q,
+  .features cite {
+     width: 80%;
+  }
+
+  .features > article {
+     display: flex;
+     flex-direction: column;
+     row-gap: 10vh;
+     padding-bottom: 5vh;
+     padding-top: 5vh;
+  }
+
+  .features a {
+     align-items: center;
+     row-gap: 2vh;
+     color: var(--darkerBlack);
+  }
+
+  .features h3 {
+     width: 40%;
+     text-align: center;
+  }
+
+  .features i {
+     font-size: 48px;
+  }
+
+  .features p {
+     color: var(--darkerGray);
+     font-weight: 500;    
+  }
+  /* SECTION.FEATURES, END */
+
+  /* SECTION.ABOUT, START */
+  .about {
+     padding: 5%;
+     row-gap: 3vh;
+  }
+
+  .about > article {
+     display: flex;
+     align-items: center;
+     column-gap: 1vh;
+  }
+
+  .about aside {
+     display: flex;
+     border: 2px solid var(--defaultGray);
+     width: 30%;
+     height: 1vh;
+     background-color: var(--defaultGray);
+  }
+
+  .about section {
+     display: flex;
+     flex-direction: column;
+     row-gap: 3vh;
+  }
+
+  .about section article {
+     row-gap: 3vh;
+  }
+
+  .about a {
+     width: 30%;
+     background-color: var(--defaultColor);
+     text-align: center;
+     color: whitesmoke;
+     padding: 1%;
+  }
+   
+  .about p {
+     line-height: 1.5;
+     color: var(--lightBlack2);
+     font-size: 12px;
+  }
+
+  .about blockquote {
+     border-left: 10px solid var(--defaultColor);
+     padding: 3%;
+     row-gap: 3vh;
+  }
+
+  .about q {
+     padding-left: 5%;
+     line-height: 1.5;
+     font-style: italic;
+     font: 12px;
+     color: var(--lightBlack2);
+  }
+
+  .about cite {
+     color: var(--defaultColor);
+     text-transform: uppercase;
+     padding-left: 5%;
+  }
+  /* ABOUT.SECTION, END */
+  /* MAIN, END */
+
+  /* FOOTER, START */
+  footer {
+     border-top: 5px solid var(--defaultColor);
+     background-color: var(--defaultBlack);
+     row-gap: 5vh;
+  }
+
+  footer > article,
+  footer aside,
+  footer section,
+  footer > article > article {
+     display: flex;
+     flex-direction: column;
+     row-gap: 4vh;
+  }
+
+  footer > section,
+  footer > article {
+     padding: 5%;
+  }
+
+  footer section > aside {
+     flex-direction: row;
+     column-gap: 2vh;
+  }
+
+  aside > form {
+     padding: 2%;
+     display: flex;
+  }
+
+  input {
+     padding: 2%;
+     border: none;
+     background-color: var(--lightBlack2);
+  }
+
+  [type="email"] {
+     background-color: var(--lightBlack);
+  }
+
+  input,
+  input::placeholder {
+     color: var(--defaultGray);
+  }
+
+  footer > section {
+     border-top: 1px solid var(--lightBlack2);
+     background-color: var(--darkerBlack);
+  }
+
+  footer span {
+     color: white;
+  }
+
+  footer a {
+     border: 2px solid var(--defaultGray);
+     border-radius: 50%;
+     font-size: 18px;
+     color: var(--defaultGray);
+     height: 4vh;
+     width: 4vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+
+  footer h3 {
+     text-transform: uppercase;
+     color: var(--defaultGray);
+  }
+
+  footer p {
+     color: var(--darkerGray);
+  }
+  /* FOOTER, END */
 }
+/* MOBILE, END */
+
+/* TABLET, START */
+@media (min-width: 600px) {
+
+}
+/* TABLET, END */
