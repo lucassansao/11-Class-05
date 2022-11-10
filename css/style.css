@@ -331,6 +331,33 @@ a {
 /* HEADER, END */
 
 /* NAVIGATION, START */
+   nav {
+      padding: 3%;
+      flex-direction: row;
+      justify-content: space-between;
+   }
+
+   nav > ul {
+      padding-top: 20px;
+      padding-top: 15px;
+      width: 65%;
+      display: flex;
+      justify-content: space-evenly;
+   }
+
+   nav > aside {
+      
+   }
+
+   nav li {
+      list-style-type: none;
+   }
+
+   nav a {
+      color: var(--lightBlack);
+   }
+
+
 /* NAVIGATION, END */
 
 /* SECTION.FEATURES, START */
