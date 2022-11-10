@@ -346,7 +346,7 @@ a {
    }
 
    nav > aside {
-      
+      display: none;
    }
 
    nav li {
@@ -356,8 +356,6 @@ a {
    nav a {
       color: var(--lightBlack);
    }
-
-
 /* NAVIGATION, END */
 
 /* SECTION.FEATURES, START */
