@@ -324,6 +324,87 @@ a {
 
 /* TABLET, START */
 @media (min-width: 600px) {
+   
+/* HEADER, START */
+   header {
+      height: 45vh;
+   }
+/* HEADER, END */
+
+/* NAVIGATION, START */
+
+/* NAVIGATION, END */
+
+/* SECTION.FEATURES, START */
+   .features {
+      align-items: center;
+      padding-top: 1vh;
+   }
+
+   .features > article {
+      width: 96%;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0;
+   }
+
+   .features blockquote {
+      width: 80%;
+      padding-left: 10%;
+      padding-right: 10%;
+   }
+
+   .features a {
+      width: 24%;
+      text-align: center;
+   }
+
+   .feature h3 {
+      width: 70%;
+   }
+
+
+/* SECTION.FEATURES, END */
+
+/* SECTION.ABOUT, START */
+   .about {
+      padding-left: 1%;
+      padding-right: 1%;
+   }
+   .about section {
+      flex-direction: row;
+      column-gap: 2vh;
+      padding: 0;
+   }
+
+   .about aside {
+      width: 40%;
+   }
+
+   .about > article {
+      width: 100%;
+      justify-content: center;
+   }
+
+   .about p {
+      font-size: 16px;
+   }
+
+   .about a {
+      width: 45%;
+      padding: 2%;
+   }
+
+   .about blockquote,
+   .about q,
+   .about cite {
+      padding: 1%
+   }
+
+   .about q {
+      font-size: 16px;
+   }
+/* SECTION.ABOUT, END */
 
 }
 /* TABLET, END */
