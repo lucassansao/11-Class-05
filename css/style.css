@@ -324,7 +324,6 @@ a {
 
 /* TABLET, START */
 @media (min-width: 600px) {
-   
 /* HEADER, START */
    header {
       height: 45vh;
@@ -332,7 +331,6 @@ a {
 /* HEADER, END */
 
 /* NAVIGATION, START */
-
 /* NAVIGATION, END */
 
 /* SECTION.FEATURES, START */
@@ -362,7 +360,6 @@ a {
    .feature h3 {
       width: 70%;
    }
-
 
 /* SECTION.FEATURES, END */
 
@@ -406,5 +403,43 @@ a {
    }
 /* SECTION.ABOUT, END */
 
+/* FOOTER,START */
+   footer > article,
+      padding-bottom: 2vh;
+   }
+
+   footer > section {
+      padding: 2%;
+      flex-direction: row;
+      justify-content: space-between;
+   } 
+
+   footer,
+   footer > article > section,
+   footer > article > article {
+      row-gap: 2vh;
+   }
+
+   footer > article > section {
+      column-gap: 1vh;
+   }
+
+   footer a {
+      width: 3vh;
+      height: 3vh;
+   }
+
+   footer aside {
+      row-gap: 1vh;
+   }
+
+   form {
+      justify-content: right;
+   }
+
+   footer h3 {
+      font-size: 22px;
+   }
+/* FOOTER, END */
 }
 /* TABLET, END */
